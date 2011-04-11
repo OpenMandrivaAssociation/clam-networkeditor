@@ -76,6 +76,11 @@ scons \
 mkdir -p %{buildroot}%{_prefix}
 scons install
 
+# FIXME: this should be adjusted in scons files
+%ifarch x86_64
+mv %{buildroot}/usr/lib %{buildroot}%{_libdir}
+%endif
+
 %clean
 rm -rf %{buildroot}
 
