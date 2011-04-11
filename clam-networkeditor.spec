@@ -11,7 +11,7 @@ Group: System/Libraries
 License: GPL
 Source: http://clam-project.org/download/src/NetworkEditor-%{version}.tar.gz
 Patch1: %{name}-1.4.0-key-scope.patch
-BuildRequires: libclam-devel scons qt4-devel
+BuildRequires: libclam-devel scons qt4-devel ladspa-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 %description
