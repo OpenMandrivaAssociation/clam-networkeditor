@@ -4,14 +4,14 @@
 
 Name: clam-networkeditor
 Version: 1.4.0
-Release: 1
+Release: 2
 Summary: A tool for editing CLAM processing networks
 URL: http://clam-project.org/
 Group: System/Libraries
 License: GPL
 Source: http://clam-project.org/download/src/NetworkEditor-%{version}.tar.gz
 Patch1: %{name}-1.4.0-key-scope.patch
-BuildRequires: libclam-devel scons qt4-devel ladspa-devel
+BuildRequires: libclam-devel scons qt4-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 %description
