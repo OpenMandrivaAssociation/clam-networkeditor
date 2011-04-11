@@ -4,7 +4,7 @@
 
 Name: clam-networkeditor
 Version: 1.4.0
-Release: 2
+Release: 4
 Summary: A tool for editing CLAM processing networks
 URL: http://clam-project.org/
 Group: System/Libraries
@@ -51,6 +51,7 @@ to your CLAM applications.
 Group: Development/C
 Summary: Development components for clam-qtmonitors
 Requires: %{libname} = %{version}-%{release}
+Provides: libclam-qtmonitors-devel
 
 %description -n %{develname}
 CLAM is a full-fledged software framework for research and application
