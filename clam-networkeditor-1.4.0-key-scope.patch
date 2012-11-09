@@ -1,0 +1,13 @@
+--- NetworkEditor-1.4.0/src/widgets/EmbededWidgets.hxx.orig	2011-04-09 15:09:04.000000000 -0300
++++ NetworkEditor-1.4.0/src/widgets/EmbededWidgets.hxx	2011-04-09 15:09:14.000000000 -0300
+@@ -9,8 +9,9 @@ namespace CLAM
+ 
+ class EmbededWidgetCreatorBase
+ {
+-private:
++public:
+ 	typedef std::string Key;
++private:
+ 	typedef std::map<Key, EmbededWidgetCreatorBase*> Creators;
+ 	static Creators & creators();
+ protected:
